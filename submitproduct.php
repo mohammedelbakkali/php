@@ -93,5 +93,12 @@ if(isset($_POST['submit'])){
 
   fclose($filetoken);
 
-  header("Location: http://localhost/project/ExercicePhp/profile.php?uid=14096");  
+  $tokenfile = fopen("token.txt","r") or die("le file token n'existe pas !");
+
+    $user= fgets($tokenfile);
+    $array = explode("|",$user);
+
+    fclose($tokenfile);
+
+  header("Location: http://localhost/project/ExercicePhp/profile.php?uid=".$array[0]."");  
 }

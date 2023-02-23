@@ -12,10 +12,12 @@ $filetoken = fopen("token.txt","r") or die('Ouverture du fichier token impossibl
            
       $data =file("product/".$nameuser.".txt");
       $line = $data[count($data)-1];
+      
       $chaine = explode("|",$line);
-
+       
         
    $rang =  $chaine[0];
+
         $fileUser = fopen("product/".$nameuser.".txt","r") or die("Ouverture du fichier fileuser impossible !");
        $i=0;
         while(!feof($fileUser)){

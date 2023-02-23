@@ -11,17 +11,28 @@
 </head>
 <body>
        <?php require_once "./layout/header.php"; ?>
+       
        <div class="alert alert-success" role="alert"> Welcome <?php  echo $nom; ?> ! </div>
          <div class="container">
              <div class ="row">
                  <div class="col-md-3"></div>
                  <div class="col-md-6">
                  <ul class="list-group">
-                       <h3>les informations de votre compte </h3>
-                        <li class="list-group-item">Nom : <?php echo $nom ; ?></li>
-                        <li class="list-group-item">Prenom : <?php echo $prenom ; ?></li>
-                        <li class="list-group-item">Email : <?php echo $email ; ?></li>
-                        <li class="list-group-item">UID : <?php echo $uid ; ?></li>
+                 <?php require_once "./informationsUser.php";
+                 
+                    echo '
+                    <h3>les informations de votre compte </h3>
+                    <li class="list-group-item">Nom : '.$nom.'  </li>
+                    <li class="list-group-item">Prenom :'.$prenom.'</li>
+                    <li class="list-group-item">Email :'.$email.' </li>
+                    <li class="list-group-item">UID : '.$uid.' </li>
+                    
+                    ';
+
+                 
+                 
+                 ?>
+
 </ul>
 
                  </div>
