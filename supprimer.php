@@ -33,7 +33,7 @@ break;
 
 fclose($filetoken);
 
-header("Location: http://localhost/project/ExercicePhp/produitPage.php"); 
+header("Location: http://localhost/folder/php-main/php/produitPage.php"); 
 
 
 ?>

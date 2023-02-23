@@ -100,5 +100,5 @@ if(isset($_POST['submit'])){
 
     fclose($tokenfile);
 
-  header("Location: http://localhost/project/ExercicePhp/profile.php?uid=".$array[0]."");  
+  header("Location: http://localhost/folder/php-main/php/profile.php?uid=".$array[0]."");  
 }

@@ -21,9 +21,9 @@
                  <?php require_once "./informationsUser.php";
                  
                     echo '
-                    <h3>les informations de votre compte </h3>
-                    <li class="list-group-item">Nom : '.$nom.'  </li>
-                    <li class="list-group-item">Prenom :'.$prenom.'</li>
+                    <h3>Your Personal Infos  </h3>
+                    <li class="list-group-item">First Name: '.$nom.'  </li>
+                    <li class="list-group-item">Last Name:'.$prenom.'</li>
                     <li class="list-group-item">Email :'.$email.' </li>
                     <li class="list-group-item">UID : '.$uid.' </li>
                     

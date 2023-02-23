@@ -35,7 +35,7 @@ require_once './ifconnect.php';
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost/project/ExercicePhp/produitPage.php" tabindex="-1" aria-disabled="true">product</a>
+          <a class="nav-link" href="http://localhost/folder/php-main/php/produitPage.php" tabindex="-1" aria-disabled="true">product</a>
         </li>
       </ul>
       <form class="d-flex">

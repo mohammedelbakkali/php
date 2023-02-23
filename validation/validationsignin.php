@@ -44,7 +44,7 @@ if(isset($submit)){
                                             fwrite($tokenfile,$user);
                                             fclose($tokenfile);
 
-                                        header("Location: http://localhost/project/ExercicePhp/profile.php?uid=".$uid."");
+                                        header("Location: http://localhost/folder/php-main/php/profile.php?uid=".$uid."");
                                    }else {
                                      echo"le mode passe ou l'email est incorrect !";
                                    }

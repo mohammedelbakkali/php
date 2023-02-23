@@ -35,15 +35,15 @@ $filetoken = fopen("token.txt","r") or die('Ouverture du fichier token impossibl
                       <form action="supprimer.php" method="post">
                       
                         
-              <div class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded" style="max-width: 540px;margin-left:50px">
+              <div class="card mb-3 shadow p-3 mb-5 bg-body-tertiary rounded" style="max-width: 540px;margin-left:50px" >
               <div class="row g-0">
                 <div class="col-md-4">
                   <img src="'.$array2[3].'" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">'.$array2[1].'</p>
+                    <h5 class="card-title">'.$array2[1].'</h5>
+                    
                     <p class="card-text"><small class="text-muted">'.$array2[2].'</small></p>
                     <input type="hidden" name="id"  value='.$array2[0].'  class="btn btn-danger">
                     <input type="submit"  class="btn btn-danger" value="supprimer"></input>
@@ -66,7 +66,7 @@ $filetoken = fopen("token.txt","r") or die('Ouverture du fichier token impossibl
   fclose($filetoken);
 
 
-  require_once "../ExercicePhp/layout/footer.php";
+  require_once "layout/footer.php";
 
   ?>
 

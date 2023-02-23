@@ -31,7 +31,7 @@ if(isset($submit)){
             $text =$iduser."|".$nome."|".$prenom."|".$email."|".$password."|"."\r\n";
             fwrite($filepasswod , $text);
             fclose($filepasswod);
-            header("Location: http://localhost/project/ExercicePhp/signin.php"); 
+            header("Location: http://localhost/folder/php-main/php/signin.php"); 
             
         
 
