@@ -18,9 +18,7 @@ if(isset($submit)){
                         $uid = fgets($fileUser);
                         echo $uid;
                        
-                       if(feof($fileUser)==false){
-                        break;
-                       }
+                             break;
                        }
                   fclose($fileUser);
                  //--------------------------chercher uid recupere dans le fichier passwod-----------------------------------

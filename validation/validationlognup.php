@@ -19,6 +19,13 @@ if(isset($submit)){
             fwrite($fileUser , $textid);
             fclose($fileUser);
 
+           //========================FILE PRODUCT=====================
+           $fileUser = fopen("../product/".$nameuser.".txt","a") or die("Ouverture du fichier fileuser impossible !");
+           mkdir("../RepUsers/".$nameuser);
+           fclose($fileUser);
+
+
+
 
             $filepasswod = fopen("../etc/passwod.txt","a") or die("Ouverture du fichier passwod  impossible !");
             $text =$iduser."|".$nome."|".$prenom."|".$email."|".$password."|"."\r\n";
